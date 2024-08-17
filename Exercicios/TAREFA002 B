@@ -5,20 +5,17 @@ float receita, despesa, saldo1, saldo2; // declaramos os valores como float para
 int main() {
 
 printf("Insira o seu saldo: R$ "); // Solicita que o usuário insira quanto é seu saldo
-
 scanf("%f", &saldo1);
 
 printf("Insira o valor da receita: R$ "); // Solicita que o usuário insira quanto foi a receita
-
 scanf("%f", &receita);
 
 printf("Insira o valor da despesa: R$ "); // Solicita que o usuário insira quanto foi a despesa
-
 scanf("%f", &despesa);
 
 saldo2 = saldo1 + (receita - despesa); // Faz a atualização do saldo subitraindo o valor da receita com o da despesa e somando com o saldo antigo logo em seguida
 
-printf("Saldo atualizado: R$ %.2f, saldo2"); // Exibe o saldo atualizado
+printf("Saldo atualizado: R$ %.2f\n", saldo2); // Exibe o saldo atualizado
 
 return 0;
 }
