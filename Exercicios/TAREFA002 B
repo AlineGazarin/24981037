@@ -15,7 +15,7 @@ scanf("%f", &despesa);
 
 saldo2 = saldo1 + (receita - despesa); // Faz a atualização do saldo subitraindo o valor da receita com o da despesa e somando com o saldo antigo logo em seguida
 
-printf("Saldo atualizado: R$ %.2f\n", saldo2); // Exibe o saldo atualizado
+printf("Saldo atualizado: R$ %.2f", saldo2); // Exibe o saldo atualizado
 
 return 0;
 }
