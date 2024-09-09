@@ -1,1 +1,77 @@
+Exercicios 
+A)
+
+# include <stdio.h>
+
+int main ()
+{
+long n = 4000000000;
+printf ("%ld\n", n);
+return 0;
+
+}
+
+
+B)
+# include <stdio.h>
+
+int main () 
+{
+    int a;
+printf ("%d\n", a );
+return 0;
+}
+
+C)
+#include <stdio.h>
+int main () 
+{
+    int n = 4, a = 2;
+printf("%d",4);
+printf("%d",2);
+return 0;
+}
+
+D)
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("%d", a);
+
+    return 0;
+}
+
+Exercicio 2
+A)
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3; // declaração de variáveis
+    printf("Digite o primeiro número:\n");
+    scanf("%d", &num1);
+    printf("Digite o segundo número:\n");
+    scanf("%d", &num2);
+    printf("Digite o terceiro número:\n");
+    scanf("%d", &num3);
+    printf("Os números na ordem inversa são: %d, %d, %d\n", num3, num2, num1);
+
+    return 0;
+}
+
+B)
+#include <stdio.h>
+
+int main() 
+{
+    char nome[50];
+
+    printf("Olá, eu sou o Nº 1, como é seu nome?\n");
+    scanf("%s",nome);
+    printf("Bem-vindo ao clube, %s!\n", nome);
+    return 0;
+}
+
+C)
 
