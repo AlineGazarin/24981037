@@ -1,1 +1,16 @@
+#include <stdio.h>
+#include <math.h>
 
+float raio, area;
+
+int main() {
+
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+
+    area = M_PI * pow(raio, 2);
+
+    printf("A área do círculo é: %.2f\n", area);
+
+    return 0;
+}
