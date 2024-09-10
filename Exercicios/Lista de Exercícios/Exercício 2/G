@@ -1,1 +1,27 @@
+#include <stdio.h>
 
+float P, V, T, M;
+
+int main() {
+
+    printf("Digite a pressão (P) do pneu em psi: ");
+    scanf("%f", &P);
+
+
+    printf("Digite o volume (V) do pneu em metros cúbicos: ");
+    scanf("%f", &V);
+
+
+    printf("Digite a temperatura (T) do pneu em graus Fahrenheit: ");
+    scanf("%f", &T);
+
+
+
+    M = (P * V) / (0.37 * (T + 460));
+    printf("A massa de ar no pneu é: %.2f kg\n", M);
+
+
+
+    return 0;
+
+}
