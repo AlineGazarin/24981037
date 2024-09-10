@@ -7,4 +7,4 @@ int main ()
 printf ("%d\n", a);
 return 0;
 }
-//declaração de variável em primeiro 
+//erro: declaração de variável após printf 
