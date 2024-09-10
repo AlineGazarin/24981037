@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int primeiro_termo, razao, n_esimo_termo, n;
+
+int main() {
+
+    printf("Digite o primeiro termo da PA: ");
+    scanf("%d", &primeiro_termo);
+
+    printf("Digite a razão da PA: ");
+    scanf("%d", &razao);
+
+    printf("Digite o número N para encontrar o N-ésimo termo da PA: ");
+    scanf("%d", &n);
+
+    n_esimo_termo = primeiro_termo + (n - 1) * razao;
+
+    printf("O %d-ésimo termo da PA é: %d\n", n, n_esimo_termo);
+
+    return 0;
+}
