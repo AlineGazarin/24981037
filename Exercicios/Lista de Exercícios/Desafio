@@ -1,1 +1,42 @@
+#include <stdio.h>
+
+int main() {
+
+    float preco_acao1 = 24.13, preco_acao2 = 11.00, preco_acao3 = 38.65;
+    float dividendo_acao1 = 17.00, dividendo_acao2 = 35.00, dividendo_acao3 = 25.00;
+    float investimento_total = 1000.00; 
+    int quantidade_acao1, quantidade_acao2, quantidade_acao3;
+
+    printf("Quantas ações da Ação 1 deseja comprar? ");
+    scanf("%d", &quantidade_acao1);
+    
+    printf("Quantas ações da Ação 2 deseja comprar? ");
+    scanf("%d", &quantidade_acao2);
+    
+    printf("Quantas ações da Ação 3 deseja comprar? ");
+    scanf("%d", &quantidade_acao3);
+    
+    float valor_gasto_acao1 = quantidade_acao1 * preco_acao1;
+    float valor_gasto_acao2 = quantidade_acao2 * preco_acao2;
+    float valor_gasto_acao3 = quantidade_acao3 * preco_acao3;
+    
+    float total_gasto = valor_gasto_acao1 + valor_gasto_acao2 + valor_gasto_acao3;
+    
+    if (total_gasto > investimento_total) {
+        printf("Você está gastando mais do que seu orçamento de R$ 1000,00. Ajuste a quantidade de ações.\n");
+        return 1;
+    }
+    
+    float dy_acao1 = (dividendo_acao1 / preco_acao1) * 100;
+    float dy_acao2 = (dividendo_acao2 / preco_acao2) * 100;
+    float dy_acao3 = (dividendo_acao3 / preco_acao3) * 100;
+
+    printf("Dividend Yield da Ação 1: %.2f%%\n", dy_acao1);
+    printf("Dividend Yield da Ação 2: %.2f%%\n", dy_acao2);
+    printf("Dividend Yield da Ação 3: %.2f%%\n", dy_acao3);
+    
+    printf("Total gasto: R$ %.2f\n", total_gasto);
+
+    return 0;
+}
 
