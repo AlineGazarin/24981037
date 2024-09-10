@@ -1,9 +1,10 @@
-B)
+
 # include <stdio.h>
 
 int main () 
 {
     int a;
-printf ("%d\n", a );
+printf ("%d\n", a);
 return 0;
 }
+//declaração de variável em primeiro 
