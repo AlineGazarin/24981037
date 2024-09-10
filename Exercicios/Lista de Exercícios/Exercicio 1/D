@@ -1,4 +1,4 @@
-D)
+
 #include <stdio.h>
 
 int main() {
@@ -9,3 +9,4 @@ int main() {
     return 0;
 }
 
+// erro: sem & no scanf
