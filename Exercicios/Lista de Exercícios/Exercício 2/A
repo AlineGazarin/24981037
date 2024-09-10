@@ -1,8 +1,7 @@
-A)
 #include <stdio.h>
 
 int main() {
-    int num1, num2, num3; // declaração de variáveis
+    int num1, num2, num3;
     printf("Digite o primeiro número:\n");
     scanf("%d", &num1);
     printf("Digite o segundo número:\n");
