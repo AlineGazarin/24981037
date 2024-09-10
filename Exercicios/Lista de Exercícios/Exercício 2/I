@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+float a, b, c; 
+float delta, raiz1, raiz2;
+
+int main() {
+    printf("Digite o valor de a (coeficiente de x^2): ");
+    scanf("%f", &a);
+
+    printf("Digite o valor de b (coeficiente de x): ");
+    scanf("%f", &b);
+
+    printf("Digite o valor de c (constante): ");
+    scanf("%f", &c);
+
+    if (a == 0) {
+        printf("Não é uma equação de segundo grau, pois o coeficiente 'a' é zero.\n");
+        return 1;
+    }
+
+    delta = b * b - 4 * a * c;
+
+    if (delta < 0) {
+        printf("A equação não possui raízes reais, pois o delta é negativo.\n");
+    } else if (delta == 0) {
+    
+        raiz1 = -b / (2 * a);
+        printf("A equação possui uma única raiz real: %.2f\n", raiz1);
+    } else {
+
+        raiz1 = (-b + sqrt(delta)) / (2 * a);
+        raiz2 = (-b - sqrt(delta)) / (2 * a);
+        printf("As raízes da equação são: %.2f e %.2f\n", raiz1, raiz2);
+    }
+
+    return 0;
+}
