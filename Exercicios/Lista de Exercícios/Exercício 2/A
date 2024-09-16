@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &num2);
     printf("Digite o terceiro número:\n");
     scanf("%d", &num3);
-    printf("Os números na ordem inversa são: %d, %d, %d\n", num3, num2, num1);
+    printf("Os números na ordem inversa são: %d %d %d\n", num3, num2, num1);
 
     return 0;
 }
