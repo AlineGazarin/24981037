@@ -1,0 +1,1 @@
+int cameraData[10];
